@@ -1,0 +1,84 @@
+
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-overlay{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-color: rgb(255, 120, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    
+    transform: scale(0);
+    transition: 0.5s;
+}
+*{
+    background-color: #c5cbe3;
+}
+#menu-overlay.active {
+    transform: scale(1);
+}
+
+#menu-overlay ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#menu-overlay ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 4em;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+#menu-overlay ul li a::before {
+ 
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #ff0;
+
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.5s;
+}
+
+#menu-overlay ul li a:hover::before {
+
+    transform: translateY(-50%) scaleX(1);
+    transform-origin: left;
+
+    transition: transform 0.5s;
+}
+
+#toggle-icon {
+    position: fixed;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: url(images/bookkk.png) no-repeat;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#toggle-icon.active {
+    background-image: black url(mages/bookkk.png);
+}

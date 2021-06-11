@@ -1,0 +1,221 @@
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+	margin: 0;
+}
+body{
+	background-color: #c5cbe3;
+	font-size: 14px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ul,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #b4a078;
+}
+input{
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	border: 1px solid #C5CBE3;
+}
+label{
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+}
+th,td{
+	padding: 0;
+}
+
+.h3{
+	color: #ff9838;
+}
+.center{
+	width: 1090px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.scaleImg img{
+	transition: 1s ease-out;
+	transform: scale(1);
+}
+.scaleImg:hover img{
+	transform: scale(1.1);
+}
+.original{
+	background: #C5CBE3 url(../images/logo.png) center no-repeat;
+}
+
+#head{
+	border-bottom: 1px solid #C5CBE3;
+	box-shadow: 0 2px 2px #f3f3f3;
+}
+#head .head{
+	background: rgb(0, 0, 0);
+	font-size: 16px;
+	line-height: 40px;
+}
+#head .head li{
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+#head .head li a{
+	color: rgb(255, 255, 255);
+	padding: 0 10px;
+	border-left: 1px solid #5c5c5c;
+}
+#head .head li a:hover{
+	color: rgb(255, 113, 47);
+}
+#head .head li a.noborder{
+	border: none;
+}
+#head .margin{
+	margin-right: 10px;
+}
+
+
+/*----------search----------*/
+.sBox{
+	height: 25px;
+	margin: 16px 40px 0 0;
+	font-size: 0;
+}
+.sBox input{
+	width: 250px;
+	height: 19px;
+	line-height: 24px;
+	border: none;
+	border-bottom: 1px solid #d8cebc;
+	color: #b4a078;
+	outline: none;
+	font-size: 15px;
+}
+.sBox a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/ico_03.gif);
+	vertical-align: middle;
+}
+
+
+
+/*----------NAV----------*/
+
+.nav{
+	position: relative;
+	background:black;
+}
+.nav .center{
+	position: relative;
+}
+.navBar,.nav .subNav{
+	text-align: center;
+	font-size: 0;
+}
+.navBar li,.nav .subNav li{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 30px;
+	height: 50px;
+}
+.navBar li.separate{
+	padding: 0;
+	color: #ccc;
+}
+.navBar li a{
+	color: blanchedalmond;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.navBar li a:hover,.navBar li.active a{
+	border-bottom: 3px solid #f7aa1c;
+}
+
+.cartWrap{
+	position: absolute;
+	right: 0;
+	top: -25px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background: url(../images/ico_04.gif);
+}
+.cartWrap i{
+	font: 12px/20px "Arial, Helvetica, sans-serif";
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	color: #fff;
+	background: #d4282d;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+
+.bkimg{
+   position: relative;
+    margin: 100px auto;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    font-family: Arial;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.snav{
+	position: relative;
+}
+.snav .center{
+	position: relative;
+}
+.snavBar{
+	text-align: center;
+	font-size: 0;
+}
+.snavBar li{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 30px;
+	height: 50px;
+}
+.snavBar li.separate{
+	padding: 0;
+	color: #ccc;
+}
+.snavBar li a{
+	color: #4056A1;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.snavBar li a:hover{
+	border-bottom: 3px solid #f7aa1c;
+}

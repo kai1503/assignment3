@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</head>
+
+<body>
+    <div id="toggle-icon" onclick="menuToggle()">
+
+    </div>
+    <div id="menu-overlay">
+        <ul>
+      
+            <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5501/item.html">CHILDREN'S</a></li>
+            <li><a href="#">NON-FITION</a></li>
+            <li><a href="#">FICTION</a></li>
+            <li><a href="#">HISTORY</a></li>
+        </ul>
+    </div>
+    <script>
+        function menuToggle() {
+          
+            var nav = document.getElementById('menu-overlay');
+            nav.classList.toggle('active');
+
+            var toggleIcon = document.getElementById('toggle-icon');
+            toggleIcon.classList.toggle('active');
+        }
+    </script>
+</body>
+    </section>
+</body>
+</html>
